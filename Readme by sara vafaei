@@ -1,0 +1,27 @@
+(1)The main goals of the project are:  
+• Development of a deep learning based system that can convert recorded speech from one speaker to another speaker.
+ • Deep understanding of deep learning architectures  Thorough knowledge in using CrossPython deep learning library
+ • An innovative architecture by following the state of the art in deep learning for Suggest audio conversion
+ • Evaluate the developed conversion system to perform better than those submitted to the 2016 Audio to Speech Conversion Challenge
+ 
+
+In this project we present a first attempt at a deep learning based audio transformation system where the alignment between the training data is intrinsic to the model. Our system is structured in three main blocks: 
+1-Speech coding using Ahocoder and data normalization 
+2-The second and main block is an RNN-based encoder-decoder structure with an attention mechanism, whose main strengths are the ability to process sequences of variable length and align them internally. 
+3-The third block performs a denormalization system and reconstructs the speech signal
+
+(2)We trained a deep autoencoder to generate compact representations of the short-term spectrum of multiple loudspeakers. Using this compressed representation as the mapping features, we then trained an artificial neural network to predict the target audio features from the source. Audio features Finally, we built a deep neural network out of it. We compared the trained deep autoencoder and the artificial neural network weights, which were then fine-tuned using backpropagation. We objectively evaluated the existing methods using Gaussian mixture of models and frame selection, and also performed perceptual tests to measure the conversion accuracy and speech quality of the selected systems.
+
+(3)We objectively evaluated the existing methods using Gaussian mixture of models and frame selection, and also performed perceptual tests to measure the conversion accuracy and speech quality of the selected systems. The results showed that for 70 educational sentences, the selected box is the best in terms of accuracy and quality. When using only two training sentences, the pre-trained deep neural network performed best, in terms of accuracy and quality.
+
+(4)Objective evaluations showed that DNN and FS performed best for large training setfs and DNN performed best for small training set. The set of perceptual experiments showed that for the large training set, FS performed best in terms of accuracy and quality. For the small training set, DNN performed best in terms of accuracy and quality. We were able to match JDGMM transformation accuracy with 70 sentences with pre-trained DNN using only two sentences. These results are an example of the effectiveness of semi-supervised learning.
+
+(5)This project is taken from the link [https://github.com/albertaparicio/tfg-voice-conversion].
+
+(6)My name is Sara Vafaei. I am a master's student in medical engineering majoring in bioelectricity. I have followed up this project for DSP.
+
+(7)New article link:(https://drive.google.com/file/d/19b95HfEhEFC8oKTEQ4TiVDDh3gKt6pjM/view?usp=drivesdk)
+
+(8)Video link explaining project code and article:(https://drive.google.com/file/d/19wXkh_DjWpHAga6uQSImo1GZTnpQAWqG/view?usp=drivesdk)
+
+(9)Proposal upload link:(https://docs.google.com/document/d/19oRcLfEz4RrOE-cY7-YjwG4y-bmr51XW/edit?usp=drivesdk&ouid=107968062337933175130&rtpof=true&sd=true)
